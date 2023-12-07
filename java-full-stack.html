@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=San+Francisco&display=swap" rel="stylesheet">
+    <!-- San Francisco Font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional Styles */
+        .notification-banner {
+            background-color: #007bff;
+            color: #fff;
+            padding: 15px;
+            /* Increased padding */
+            text-align: center;
+            z-index: 1000;
+            /* Ensure notification is above the navbar */
+            margin-top: 10px;
+            /* Added margin-top */
+            /* position: fixed; */
+            /* Fixed position */
+            width: 100%;
+            /* Full width */
+        }
+
+        .notification-banner a {
+            color: #ffc107;
+            text-decoration: underline;
+        }
+
+        .course-card {
+            border-radius: 15px;
+            overflow: hidden;
+            margin: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            /* Center the content */
+        }
+
+        .circular-logo {
+            width: 150px;
+            /* Fixed width */
+            height: 150px;
+            /* Fixed height */
+            object-fit: cover;
+            border-radius: 50%;
+            /* Circular view */
+            margin: 20px auto;
+            /* Centered with margin-top */
+        }
+
+        .category {
+            padding: 20px;
+            position: relative;
+            /* For absolute positioning of content text */
+            text-align: left;
+            /* Left alignment */
+        }
+
+        .topic-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .topic-list>li {
+            font-weight: bold;
+            /* Highlight main topics with bold */
+        }
+
+        .download-btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .download-btn:hover {
+            background-color: #0056b3;
+        }
+
+        .batch-timings-card {
+            border-radius: 15px;
+            overflow: hidden;
+            margin-top: 20px;
+            /* Increased space */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .batch-timings-card h2 {
+            margin-bottom: 20px;
+        }
+
+        .batch-timings {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .batch-timings li {
+            margin-bottom: 10px;
+        }
+
+        .footer {
+            margin-top: 20px;
+            /* Added margin-top */
+        }
+    </style>
+    <title>Java Full Stack Course Topics</title>
+</head>
+
+<body>
+
+    <!-- Notification Banner -->
+    <div class="notification-banner">
+        <p>🚀 Exciting News! Our new <a href="#">Advanced Java Full Stack Course</a> is now available! Enroll today!</p>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="/">
+            <img src="assets/logo.png" alt="TTH" class="company-logo">
+            <span class="company-name">TechTeachHub</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="java.html">Java</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="java-full-stack.html">Java Full Stack</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="mern.html">MERN Stack</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="react.html">React Stack</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container-fluid">
+
+        <!-- Java Full Stack Section -->
+        <section id="java-full-stack">
+            <div class="course-card">
+                <img src="assets/spring-logo.png" alt="Java Full Stack Logo" class="circular-logo">
+                <div class="category">
+                    <h2 class="course-title">Java Full Stack Course Topics</h2>
+                    <ul class="topic-list">
+                        <li>Frontend Development
+                            <ul>
+                                <li>HTML, CSS, and JavaScript</li>
+                                <li>Responsive Web Design</li>
+                                <li>Frontend Frameworks (e.g., Angular, React, Vue.js)</li>
+                            </ul>
+                        </li>
+                        <li>Backend Development
+                            <ul>
+                                <li>Server-side Programming (e.g., Java, Node.js)</li>
+                                <li>RESTful API Design</li>
+                                <li>Database Integration (SQL and NoSQL)</li>
+                            </ul>
+                        </li>
+                        <li>Full Stack Frameworks
+                            <ul>
+                                <li>Spring Boot for Java</li>
+                                <li>Express.js for Node.js</li>
+                                <li>Django for Python</li>
+                            </ul>
+                        </li>
+                        <li>Deployment and DevOps
+                            <ul>
+                                <li>Containerization (Docker)</li>
+                                <li>Continuous Integration and Deployment (CI/CD)</li>
+                                <li>Cloud Platforms (AWS, Azure, Google Cloud)</li>
+                            </ul>
+                        </li>
+                        <!-- ... Add more categories and topics as needed ... -->
+                    </ul>
+                    <a href="#" class="download-btn">Download Full Course Curriculum <i class="fas fa-download"></i></a>
+                </div>
+            </div>
+
+            <!-- Batch Timings Card -->
+            <div class="batch-timings-card">
+                <h2 class="course-title">Batch Timings</h2>
+                <ul class="batch-timings">
+                    <li>Batch 1: Monday and Wednesday, 6:00 PM - 8:00 PM</li>
+                    <li>Batch 2: Tuesday and Thursday, 10:00 AM - 12:00 PM</li>
+                    <li>Batch 3: Saturday, 3:00 PM - 5:00 PM</li>
+                </ul>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <p>Email: contact@example.com</p>
+                    <p>Phone: +1 (123) 456-7890</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Address</h5>
+                    <p>123 Street, City, Country</p>
+                </div>
+                <div class="col-md-4">
+                    <p class="copy-right">&copy; 2023 TechTeachHub. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

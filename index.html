@@ -3,60 +3,24 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>PrimitiveTech - Solutions for AWS Cloud and Product Development</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
-    <!-- Google Fonts - Open Sans -->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <!-- Custom CSS -->
-    <style>
-        body {
-            padding-top: 56px;
-            font-family: 'Open Sans', sans-serif;
-        }
-
-        .jumbotron {
-            background-image: url('backgroundbanner.jpg');
-            /* Replace with your actual image */
-            background-size: cover;
-            background-position: bottom;
-            background-repeat: no-repeat;
-            color: white;
-            text-align: center;
-            padding: 100px 0;
-            margin-bottom: 0;
-        }
-
-        .services {
-            padding: 50px 0;
-        }
-
-        .service-card {
-            margin-bottom: 20px;
-            height: 100%;
-        }
-
-        .card-body {
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
-        .footer {
-            background-color: #f8f9fa;
-            padding: 20px 0;
-            text-align: center;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=San+Francisco&display=swap" rel="stylesheet">
+    <!-- San Francisco Font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <title>Responsive Website</title>
 </head>
 
 <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <a class="navbar-brand" href="#">PrimitiveTech</a>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="/">
+            <img src="assets/logo.png" alt="TTH" class="company-logo">
+            <span class="company-name">TechTeachHub</span>
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -64,72 +28,116 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="java.html">Java</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="java-full-stack.html">Java Full Stack</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="mern.html">MERN Stack</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="react.html">React Stack</a>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <!-- Jumbotron -->
-    <div class="jumbotron">
-        <h1 class="display-4">Welcome to PrimitiveTech</h1>
-        <p class="lead">Providing Solutions for AWS Cloud and Product Development</p>
+    <!-- Notification Banner -->
+    <div class="notification-banner">
+        <p><i class="fas fa-bell"></i> <strong>Announcement:</strong> Limited-time offer! Enroll in any course and get
+            20% off. <a href="#">Learn More</a></p>
     </div>
 
-    <!-- Services Section -->
-    <div class="container services text-center">
-        <h2>Our Services</h2>
-        <div class="row">
-            <!-- AWS Cloud Services -->
-            <div class="col-md-4">
-                <div class="card h-100 service-card">
-                    <div class="card-body">
-                        <h5 class="card-title">AWS Cloud Services</h5>
-                        <p class="card-text">Harness the power of Amazon Web Services for scalable and reliable cloud
-                            solutions.</p>
-                        <a href="#" class="btn btn-primary">Learn More</a>
-                    </div>
-                </div>
-            </div>
+    <!-- Side Navigation (for mobile view) -->
+    <div class="sidenav">
+        <a href="java.html">Java</a>
+        <a href="java-full-stack.html">Java Full Stack</a>
+        <a href="mern.html">MERN Stack</a>
+        <a href="react.html">React Stack</a>
+    </div>
 
-            <!-- Product Development -->
-            <div class="col-md-4">
-                <div class="card h-100 service-card">
-                    <div class="card-body">
-                        <h5 class="card-title">Product Development</h5>
-                        <p class="card-text">Innovative product development using cutting-edge technologies and
-                            practices.</p>
-                        <a href="#" class="btn btn-primary">Learn More</a>
-                    </div>
-                </div>
-            </div>
+    <!-- Main Content -->
+    <div class="container-fluid">
 
-            <!-- Web Development -->
-            <div class="col-md-4">
-                <div class="card h-100 service-card">
-                    <div class="card-body">
-                        <h5 class="card-title">Web Development</h5>
-                        <p class="card-text">Specializing in React, Angular, and other web technologies for modern
-                            development.</p>
-                        <a href="#" class="btn btn-primary">Learn More</a>
-                    </div>
-                </div>
+        <!-- Java Section -->
+        <section id="java" class="promotion java">
+            <div class="course-header">
+                <i class="fas fa-coffee fa-lg course-icon"></i> <!-- Bootstrap icon for Java -->
+                <h2 class="course-title">Java</h2>
             </div>
-        </div>
+            <p>Discover the power of Java programming language. Join our Java course to learn the fundamentals and
+                advanced concepts. Our expert instructors will guide you through practical exercises and real-world
+                projects.</p>
+            <p><strong>Batch Timings:</strong> Monday and Wednesday, 6:00 PM - 8:00 PM</p>
+            <a href="java.html" class="read-more-btn">Read More</a>
+        </section>
+
+        <!-- Java Full Stack Section -->
+        <section id="java-full-stack" class="promotion java-full-stack">
+            <div class="course-header">
+                <i class="fas fa-cogs fa-lg course-icon"></i> <!-- Bootstrap icon for Full Stack -->
+                <h2 class="course-title">Java Full Stack</h2>
+            </div>
+            <p>Build end-to-end Java applications with our Java Full Stack course. Learn front-end technologies like
+                HTML, CSS, and JavaScript, and back-end technologies like Java, Spring Boot, and databases. Get hands-on
+                experience with real-world projects and gain the skills to become a Full Stack Developer.</p>
+            <p><strong>Batch Timings:</strong> Tuesday and Thursday, 7:00 PM - 9:00 PM</p>
+            <a href="java-full-stack.html" class="read-more-btn">Read More</a>
+        </section>
+
+        <!-- MERN Stack Section -->
+        <section id="mern" class="promotion mern">
+            <div class="course-header">
+                <i class="fab fa-node-js fa-lg course-icon"></i> <!-- Bootstrap icon for Node.js -->
+                <h2 class="course-title">MERN Stack</h2>
+            </div>
+            <p>Explore the MERN (MongoDB, Express.js, React.js, Node.js) stack for modern web development. Our MERN
+                Stack course covers the full development cycle, from setting up a server to deploying a web application.
+                Join us to become a proficient MERN Stack Developer.</p>
+            <p><strong>Batch Timings:</strong> Wednesday and Friday, 6:30 PM - 8:30 PM</p>
+            <a href="mern.html" class="read-more-btn">Read More</a>
+        </section>
+
+        <!-- React Stack Section -->
+        <section id="react" class="promotion react">
+            <div class="course-header">
+                <i class="fab fa-react fa-lg course-icon"></i> <!-- Bootstrap icon for React -->
+                <h2 class="course-title">React Stack</h2>
+            </div>
+            <p>Create interactive user interfaces with React.js. Our React Stack course covers React basics, state
+                management, and building dynamic web applications. Get hands-on experience with React and enhance your
+                front-end development skills.</p>
+            <p><strong>Batch Timings:</strong> Monday and Thursday, 7:30 PM - 9:30 PM</p>
+            <a href="react.html" class="read-more-btn">Read More</a>
+        </section>
+
     </div>
 
     <!-- Footer -->
-    <div class="footer">
-        <p>&copy; 2023 PrimitiveTech. All rights reserved.</p>
-    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <p>Email: contact@example.com</p>
+                    <p>Phone: +1 (123) 456-7890</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Address</h5>
+                    <p>123 Street, City, Country</p>
+                </div>
+                <div class="col-md-4">
+                    <p class="copy-right">&copy; 2023 TechTeachHub. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-    <!-- Bootstrap JS and dependencies -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

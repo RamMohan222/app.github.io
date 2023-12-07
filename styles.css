@@ -1,0 +1,127 @@
+body {
+    padding-top: 56px; /* Adjusted for the fixed-top navbar height */
+    background-color: rgba(241, 241, 241, 0.815);
+}
+
+.company-logo {
+    max-height: 40px;
+    margin-right: 10px;
+}
+
+.company-name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+.promotion {
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Ensure the circular image doesn't overflow */
+}
+
+.course-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px; /* Add some space below the header */
+}
+
+.course-icon {
+    font-size: 2.5em; /* Adjust the icon size as needed */
+    margin-right: 10px; /* Add some space to the right of the icon */
+}
+
+.course-title {
+    font-family: 'San Francisco', sans-serif;
+    font-size: 1.5em; /* Adjust the title font size as needed */
+}
+
+.java { background-color: #e57373; color: #fff; }
+.java-full-stack { background-color: #81c784; color: #fff; }
+.mern { background-color: #64b5f6; color: #fff; }
+.react { background-color: #ffb74d; color: #fff; }
+
+/* Side Navigation Styles */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    left: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.read-more-btn {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.read-more-btn:hover {
+    background-color: #0056b3;
+}
+
+.notification-banner {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    /* Fixed position */
+    /* position: fixed; */
+    /* Full width */
+    width: 100%;
+    /* Added margin-top */
+}
+
+.notification-banner a {
+    color: #ffc107;
+    text-decoration: underline;
+}
+
+.footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+}
+
+.copy-right {
+    font-size: 14px;
+}
+
