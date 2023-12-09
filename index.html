@@ -11,13 +11,13 @@
 
     <meta property="og:title" content="TechTeachHub">
     <meta property="og:description" content="Online training for Java Fullstack, MERN stack">
-    <meta property="og:image" content="URL to an image for social media sharing">
+    <meta property="og:image" content="https://techteachhub.com/assets/favicon.png">
     <meta property="og:url" content="https://www.techteachhub.com">
 
     <meta name="twitter:card" content="TechTeachHub">
     <meta name="twitter:title" content="TechTeachHub">
     <meta name="twitter:description" content="Online training for Java Fullstack, MERN stack">
-    <meta name="twitter:image" content="https://www.techteachhub.com">
+    <meta name="twitter:image" content="https://techteachhub.com/assets/favicon.png">
 
     <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
     <link rel="apple-touch-icon" sizes="57x57" href="assets/apple-touch-icon.png">
@@ -39,6 +39,10 @@
     <meta name="theme-color" content="#ffffff">
     <link rel="manifest" href="/assets/site.webmanifest">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=San+Francisco&display=swap" rel="stylesheet">
     <!-- San Francisco Font -->
@@ -48,7 +52,7 @@
     <title>TechTeachHub</title>
 </head>
 
-<body>
+<body class="root-container">
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
@@ -62,8 +66,8 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="java.html">Java</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="java.html">Java SE/EE</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="java-full-stack.html">Java Full Stack</a>
@@ -72,7 +76,7 @@
                     <a class="nav-link" href="mern.html">MERN Stack</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="react.html">React Stack</a>
+                    <a class="nav-link" href="react.html">React JS</a>
                 </li>
             </ul>
         </div>
@@ -84,32 +88,36 @@
             20% off. <a href="#">Learn More</a></p>
     </div>
 
-    <!-- Side Navigation (for mobile view) -->
+    <!-- Side Navigation (for mobile view) 
     <div class="sidenav">
-        <a href="java.html">Java</a>
+        <a href="java.html">Java SE/EE 1</a>
         <a href="java-full-stack.html">Java Full Stack</a>
         <a href="mern.html">MERN Stack</a>
         <a href="react.html">React Stack</a>
     </div>
+    -->
 
     <!-- Main Content -->
     <div class="container-fluid">
 
         <!-- Java Section -->
-        <section id="java" class="promotion java">
+        <section id="java" class="course java">
             <div class="course-header">
                 <i class="fas fa-coffee fa-lg course-icon"></i> <!-- Bootstrap icon for Java -->
-                <h2 class="course-title">Java</h2>
+                <h2 class="course-title">Java SE/EE</h2>
             </div>
             <p>Discover the power of Java programming language. Join our Java course to learn the fundamentals and
                 advanced concepts. Our expert instructors will guide you through practical exercises and real-world
                 projects.</p>
-            <p><strong>Batch Timings:</strong> Monday and Wednesday, 6:00 PM - 8:00 PM</p>
+            <div>
+                <strong class="new-batch-title">New Batch Timings:</strong>
+                <p>Monday to Saturday, 6:00 PM - 7:00 PM</p>
+            </div>
             <a href="java.html" class="read-more-btn">Read More</a>
         </section>
 
         <!-- Java Full Stack Section -->
-        <section id="java-full-stack" class="promotion java-full-stack">
+        <section id="java-full-stack" class="course java-full-stack">
             <div class="course-header">
                 <i class="fas fa-cogs fa-lg course-icon"></i> <!-- Bootstrap icon for Full Stack -->
                 <h2 class="course-title">Java Full Stack</h2>
@@ -117,12 +125,15 @@
             <p>Build end-to-end Java applications with our Java Full Stack course. Learn front-end technologies like
                 HTML, CSS, and JavaScript, and back-end technologies like Java, Spring Boot, and databases. Get hands-on
                 experience with real-world projects and gain the skills to become a Full Stack Developer.</p>
-            <p><strong>Batch Timings:</strong> Tuesday and Thursday, 7:00 PM - 9:00 PM</p>
+            <div>
+                <strong class="new-batch-title">New Batch Timings:</strong>
+                <p>Monday to Saturday, 8:00 PM - 9:00 PM</p>
+            </div>
             <a href="java-full-stack.html" class="read-more-btn">Read More</a>
         </section>
 
         <!-- MERN Stack Section -->
-        <section id="mern" class="promotion mern">
+        <section id="mern" class="course mern">
             <div class="course-header">
                 <i class="fab fa-node-js fa-lg course-icon"></i> <!-- Bootstrap icon for Node.js -->
                 <h2 class="course-title">MERN Stack</h2>
@@ -130,12 +141,15 @@
             <p>Explore the MERN (MongoDB, Express.js, React.js, Node.js) stack for modern web development. Our MERN
                 Stack course covers the full development cycle, from setting up a server to deploying a web application.
                 Join us to become a proficient MERN Stack Developer.</p>
-            <p><strong>Batch Timings:</strong> Wednesday and Friday, 6:30 PM - 8:30 PM</p>
+            <div>
+                <strong class="new-batch-title">New Batch Timings:</strong>
+                <p>Monday to Saturday, 9:00 AM - 10:00 AM</p>
+            </div>
             <a href="mern.html" class="read-more-btn">Read More</a>
         </section>
 
         <!-- React Stack Section -->
-        <section id="react" class="promotion react">
+        <section id="react" class="course react">
             <div class="course-header">
                 <i class="fab fa-react fa-lg course-icon"></i> <!-- Bootstrap icon for React -->
                 <h2 class="course-title">React Stack</h2>
@@ -143,7 +157,10 @@
             <p>Create interactive user interfaces with React.js. Our React Stack course covers React basics, state
                 management, and building dynamic web applications. Get hands-on experience with React and enhance your
                 front-end development skills.</p>
-            <p><strong>Batch Timings:</strong> Monday and Thursday, 7:30 PM - 9:30 PM</p>
+            <div>
+                <strong class="new-batch-title">New Batch Timings:</strong>
+                <p>Saturday and Sunday, 10:00 AM - 11:00 AM</p>
+            </div>
             <a href="react.html" class="read-more-btn">Read More</a>
         </section>
 
@@ -155,12 +172,12 @@
             <div class="row">
                 <div class="col-md-4">
                     <h5>Contact Us</h5>
-                    <p>Email: contact@example.com</p>
+                    <p>Email: contact.techteachhub@gmail.com</p>
                     <p>Phone: +91 89193-70764</p>
                 </div>
                 <div class="col-md-4">
                     <h5>Address</h5>
-                    <p>123 Street, City, Country</p>
+                    <p>Online class only, India</p>
                 </div>
                 <div class="col-md-4">
                     <p class="copy-right">&copy; 2023 TechTeachHub. All rights reserved.</p>
