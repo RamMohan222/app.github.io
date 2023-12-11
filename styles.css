@@ -227,8 +227,9 @@ body {
     transition: background-color 0.3s ease-in-out;
 }
 
-.download-btn:hover {
+.download-btn:visited, .download-btn:hover {
     background-color: var(--btn-bg-hover-color);
+    color: var(--btn-color);
 }
 
 .batch-timings-card {
