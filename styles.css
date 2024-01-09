@@ -1,10 +1,7 @@
 :root {
-    --sidenav-bg-color: #111;
-    --sidenav-menu-color: #818181;
-    --sidenav-menu-hover-color: #f1f1f1;
     --bg-color: rgba(241, 241, 241, 0.815);
     --footer-bg-color: #f8f9fa;
-    --box-shadow-color: rgba(0, 0, 0, 0.1);
+    --box-shadow-color: rgba(0, 0, 0, 0.2);
 
     --btn-color: #fff;
     --btn-bg-color: #007bff;
@@ -18,90 +15,50 @@
 
     --course-batch-timing-header-color: #000;
 }
-
-body {
-    padding-top: 56px;
+* {
+    margin: 0 auto;
 }
 
-.root-container {
+body {
+    margin-top: 60px;
     background-color: var(--bg-color);
 }
 
 .company-logo {
     max-height: 40px;
-    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .company-name {
-    font-size: 24px;
+    font-size: 25px;
     font-weight: bold;
 }
 
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: var(--sidenav-bg-color);
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
-
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 18px;
-    color: var(--sidenav-menu-color);
-    display: block;
-    transition: 0.3s;
-}
-
-.sidenav a:hover {
-    color: var(--sidenav-menu-hover-color)
-}
-
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    left: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-
 .notification-banner {
+    margin-top: 1.5;
     background-color: #007bff;
     color: #fff;
-    padding: 15px;
+    padding: 10px;
     text-align: center;
-    z-index: 1000;
-    margin-top: 12px;
-    width: 100%;
+    /* display: none; */
 }
 
 .notification-banner a {
+    width: 100%;
     color: #ffc107;
     text-decoration: underline;
 }
 
-@media screen and (max-height: 450px) {
-    .sidenav {
-        padding-top: 15px;
-    }
-
-    .sidenav a {
-        font-size: 18px;
-    }
+.courses {
+    margin-top: 1rem;
 }
 
 .course {
     border-radius: 8px;
-    padding: 20px;
-    margin: 20px 0;
-    box-shadow: 0 4px 8px var(--box-shadow-color);
-    overflow: hidden;
+    padding: 20px; 
+    border: none;
+    box-shadow: 0 4px 8px var(--box-shadow-color) !important;
+    /* overflow: hidden; */
     font-family: 'Source Code Pro', monospace;
 }
 
