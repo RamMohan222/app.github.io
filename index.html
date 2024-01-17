@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--Needs to update the themeing with data-bs-theme-->
+<html lang="en" data-bs-theme="dark">
 
 <head>
     <meta charset="UTF-8">
@@ -39,16 +40,12 @@
     <meta name="theme-color" content="#ffffff">
     <link rel="manifest" href="/assets/site.webmanifest">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <!-- boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=San+Francisco&display=swap" rel="stylesheet">
-    <!-- San Francisco Font -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <!-- Font Awesome CSS -->
-    <link rel="stylesheet" href="styles.css?v=09012024">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css?v=12012024">
     <title>TechTeachHub</title>
 </head>
 
@@ -57,29 +54,37 @@
     <!-- Navigation -->
     <div class="container-fluid fixed-top">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark row">
-            <a class="navbar-brand" href="/">
-                <img src="./assets/logo.png" alt="TTH" class="company-logo">
-                <span class="company-name">TechTeachHub</span>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse " id="navbarNav">
-                <ul class="navbar-nav mr-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="java.html">Java SE/EE</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="java-full-stack.html">Java Full Stack</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="mern.html">MERN Stack</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="react.html">React JS</a>
-                    </li>
-                </ul>
+            <div class="container-fluid">
+                <a class="navbar-brand ms-2" href="/">
+                    <img src="./assets/logo.png" alt="TTH" class="company-logo">
+                    <span class="company-name">TechTeachHub</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav me-2">
+                        <li class="nav-item h3" id="theme">
+                            <i class="nav-link fa-regular fa-moon" id="themetype"></i>
+                            <!-- <i class="nav-link fa-solid fa-moon h3"></i> -->
+                            <!-- <i class="nav-link fa-solid fa-sun h3"></i> -->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="java.html">Java SE/EE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="java-full-stack.html">Java Full Stack</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="mern.html">MERN Stack</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="react.html">React JS</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </div>
@@ -95,15 +100,58 @@
         </div>
     </div>
 
+    <!-- <div class="container mt-4 align-text-center">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <div class="card tth-card">
+                    Hi
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-12 col-md-6 d-flex">
+                <div class="card m-3 d-block text-bg-info no-border" style="width:100%; height: 5px;">&nbsp;</div>
+                <div class="h3 mission-title">Mission</div>
+                <div class="card m-3 d-block text-bg-info no-border" style="width:100%; height: 5px;">&nbsp;</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6 align-text-center">
+                <figure>
+                    <blockquote class="blockquote">
+                        <p class="mission-desc" style="text-align: center; font-style: italic;">
+                            Embark on a transformative journey withus as we guide you from novice to corporate
+                            industry-level developer.
+                            Our mission is to empower individuals, irrespective of their starting point, with the skills
+                            and knowledge needed to thrive in the
+                            dynamic world of software developement. Through meticulously designed programs and
+                            comprehensive resources. we aim to shape aspring
+                            developers into proficient professionals. Join us on this path of growth and unlock the
+                            doors to a rewarding career in the tech industry.
+                        </p>
+                    </blockquote>
+                </figure>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6 d-flex">
+                <div class="card m-3 d-block text-bg-info no-border" style="width:100%; height: 5px;">&nbsp;</div>
+            </div>
+        </div>
+    </div>
+
     <!-- Main Content -->
-    <div class="container-fluid courses">
-        <div class="row d-flex align-items-stretch">
+    <div class="container-fluid tth-cards mt-4">
+        <div class="row d-flex g-3 align-items-stretch">
             <!-- Java Section -->
             <section id="java" class="col-12 col-md-6 col-lg-4">
-                <div class="card h-100 course java">
-                    <div class="course-header">
-                        <i class="fas fa-coffee fa-lg course-icon"></i> <!-- Bootstrap icon for Java -->
-                        <h2 class="course-title">Java SE/EE</h2>
+                <div class="card h-100 tth-card java">
+                    <div class="tth-card-header">
+                        <i class="fas fa-coffee fa-lg tth-card-icon"></i> <!-- Bootstrap icon for Java -->
+                        <h2 class="tth-card-title">Java SE/EE</h2>
                     </div>
                     <p>Discover the power of Java programming language. Join our Java course to learn the fundamentals
                         and
@@ -114,16 +162,16 @@
                         <strong class="new-batch-title">New Batch Timings:</strong>
                         <p>Monday to Saturday, 6:00 PM - 7:00 PM</p>
                     </div>
-                    <a href="java.html" class="read-more-btn">Read More</a>
+                    <a href="java.html" class="btn btn-primary">Read More</a>
                 </div>
             </section>
 
             <!-- Java Full Stack Section -->
             <section id="java-full-stack" class="col-12 col-md-6 col-lg-4">
-                <div class="card h-100 course java-full-stack">
-                    <div class="course-header">
-                        <i class="fas fa-cogs fa-lg course-icon"></i> <!-- Bootstrap icon for Full Stack -->
-                        <h2 class="course-title">Java Full Stack</h2>
+                <div class="card h-100 tth-card java-full-stack">
+                    <div class="tth-card-header">
+                        <i class="fas fa-cogs fa-lg tth-card-icon"></i> <!-- Bootstrap icon for Full Stack -->
+                        <h2 class="tth-card-title">Java Full Stack</h2>
                     </div>
                     <p>Build end-to-end Java applications with our Java Full Stack course. Learn front-end technologies
                         like
@@ -134,16 +182,16 @@
                         <strong class="new-batch-title">New Batch Timings:</strong>
                         <p>Monday to Saturday, 8:00 PM - 9:00 PM</p>
                     </div>
-                    <a href="java-full-stack.html" class="read-more-btn">Read More</a>
+                    <a href="java-full-stack.html" class="btn btn-primary">Read More</a>
                 </div>
             </section>
 
             <!-- MERN Stack Section -->
             <section id="mern" class="col-12 col-md-6 col-lg-4">
-                <div class="card h-100 course mern">
-                    <div class="course-header">
-                        <i class="fab fa-node-js fa-lg course-icon"></i> <!-- Bootstrap icon for Node.js -->
-                        <h2 class="course-title">MERN Stack</h2>
+                <div class="card h-100 tth-card mern">
+                    <div class="tth-card-header">
+                        <i class="fab fa-node-js fa-lg tth-card-icon"></i> <!-- Bootstrap icon for Node.js -->
+                        <h2 class="tth-card-title">MERN Stack</h2>
                     </div>
                     <p>Explore the MERN (MongoDB, Express.js, React.js, Node.js) stack for modern web development. Our
                         MERN
@@ -154,16 +202,16 @@
                         <strong class="new-batch-title">New Batch Timings:</strong>
                         <p>Monday to Saturday, 9:00 AM - 10:00 AM</p>
                     </div>
-                    <a href="mern.html" class="read-more-btn">Read More</a>
+                    <a href="mern.html" class="btn btn-primary">Read More</a>
                 </div>
             </section>
 
             <!-- React Stack Section -->
             <section id="react" class="col-12 col-md-6 col-lg-4">
-                <div class="card h-100 course react">
-                    <div class="course-header">
-                        <i class="fab fa-react fa-lg course-icon"></i> <!-- Bootstrap icon for React -->
-                        <h2 class="course-title">React Stack</h2>
+                <div class="card h-100 tth-card react">
+                    <div class="tth-card-header">
+                        <i class="fab fa-react fa-lg tth-card-icon"></i> <!-- Bootstrap icon for React -->
+                        <h2 class="tth-card-title">React Stack</h2>
                     </div>
                     <p>Create interactive user interfaces with React.js. Our React Stack course covers React basics,
                         state
@@ -175,10 +223,9 @@
                         <strong class="new-batch-title">New Batch Timings:</strong>
                         <p>Saturday and Sunday, 10:00 AM - 11:00 AM</p>
                     </div>
-                    <a href="react.html" class="read-more-btn">Read More</a>
+                    <a href="react.html" class="btn btn-primary">Read More</a>
                 </div>
             </section>
-
         </div>
     </div>
 
@@ -188,23 +235,24 @@
             <div class="row">
                 <div class="col-md-4">
                     <h5>Contact Us</h5>
-                    <p>Email: contact.techteachhub@gmail.com</p>
+                    <p>Email: techteachhub@outlook.com</p>
                     <p>Phone: +91 89193-70764</p>
                 </div>
                 <div class="col-md-4">
                     <h5>Address</h5>
-                    <p>Online class only, India</p>
+                    <p>Online classes only, India</p>
                 </div>
                 <div class="col-md-4">
-                    <p class="copy-right">&copy; 2023 TechTeachHub. All rights reserved.</p>
+                    <p class="copy-right">&copy; 2024 TechTeachHub.com All rights reserved.</p>
                 </div>
             </div>
         </div>
     </footer>
 
     <!-- Bootstrap JS and jQuery -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>
