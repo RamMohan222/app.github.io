@@ -1,3 +1,13 @@
+document.addEventListener("click", function (event) {
+  var isClickInside = document.querySelector(".navbar").contains(event.target);
+  if (!isClickInside) {
+    var navbarToggler = document.querySelector(".navbar-toggler");
+    if (navbarToggler.getAttribute("aria-expanded") === "true") {
+      navbarToggler.click();
+    }
+  }
+});
+
 $.when($.ready).then(function () {
   var selectedTheme = localStorage.getItem("themetype");
   if (selectedTheme) {
