@@ -1,0 +1,31 @@
+{
+  "name": "app.github.io",
+  "version": "1.0.0",
+  "description": "[X]: SEO is done\r [ ]: Needs to optimize the CSS in all HTML's\r [ ]: Needs to add batches html\r [ ]: Needs to update course content in all pages\r [ ]: Java should be Jav + Advanced Java\r [ ]: Needs to plan Automation testing ??",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "grunt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RamMohan222/app.github.io.git"
+  },
+  "keywords": [
+    "html",
+    "javascript",
+    "css"
+  ],
+  "author": "RamMohan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RamMohan222/app.github.io/issues"
+  },
+  "homepage": "https://github.com/RamMohan222/app.github.io#readme",
+  "devDependencies": {
+    "grunt": "^1.6.1",
+    "grunt-contrib-cssmin": "^5.0.0",
+    "grunt-contrib-uglify": "^5.2.2",
+    "grunt-replace": "^2.0.2"
+  }
+}
