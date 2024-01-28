@@ -11,7 +11,7 @@ module.exports = function (grunt) {
             },
             {
               match: /<p version="version">([^$]+?)<\/p>/g,
-              replacement: '<p version="version"><%= pkg.version %></p>',
+              replacement: '<p version="version">v <%= pkg.version %></p>',
             },
           ],
         },
