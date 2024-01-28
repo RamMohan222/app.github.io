@@ -2,25 +2,21 @@ module.exports = function (grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON("package.json"),
     replace: {
-      version: {
+      timestamp: {
         options: {
           patterns: [
             {
               match: /\?v=(\d+)/g,
               replacement: "?v=<%= Date.now() %>",
             },
-            {
-              match: /<p version="version">([^$]+?)<\/p>/g,
-              replacement: '<p version="version"><%= pkg.version %></p>',
-            },
           ],
         },
         files: [
           {
-            // expand: true,
-            // flatten: true,
-            src: ["*.html"],
-            dest: "./",
+            expand: true,
+            flatten: true,
+            src: ["src/views/*.html"],
+            dest: "./build/",
           },
         ],
       },
@@ -30,7 +26,7 @@ module.exports = function (grunt) {
             {
               match: /<footer[^>]+?>([^$]+?)<\/footer>/g,
               replacement: `<footers class="footer">
-                <%= grunt.file.read("includes/footer.html") %>
+                <%= grunt.file.read("src/views/includes/footer.html") %>
                 </footers>`,
             },
           ],
@@ -39,8 +35,26 @@ module.exports = function (grunt) {
           {
             expand: true,
             flatten: true,
-            src: ["index.html"],
-            dest: "./",
+            src: ["build/*.html"],
+            dest: "./build/",
+          },
+        ],
+      },
+      version: {
+        options: {
+          patterns: [
+            {
+              match: /<p version="version">([^$]+?)<\/p>/g,
+              replacement: '<p version="version">v <%= pkg.version %></p>',
+            },
+          ],
+        },
+        files: [
+          {
+            expand: true,
+            flatten: true,
+            src: ["build/*.html"],
+            dest: "./build/",
           },
         ],
       },
@@ -58,7 +72,7 @@ module.exports = function (grunt) {
       },
       target: {
         files: {
-          "index.min.js": ["index.js"],
+          "build/index.min.js": ["src/js/index.js"],
         },
       },
     },
@@ -69,13 +83,28 @@ module.exports = function (grunt) {
       },
       target: {
         files: {
-          "index.min.css": ["index.css"],
+          "build/index.min.css": ["src/css/index.css"],
         },
       },
     },
+    cp: {
+      options: {},
+      target: {
+        src: "assets/",
+        dest: "build/assets/",
+      },
+    },
   });
+  grunt.loadNpmTasks("grunt-cp");
   grunt.loadNpmTasks("grunt-contrib-cssmin");
   grunt.loadNpmTasks("grunt-contrib-uglify");
   grunt.loadNpmTasks("grunt-replace");
-  grunt.registerTask("default", ["cssmin", "uglify", "replace:version"]);
+  grunt.registerTask("default", [
+    "cssmin",
+    "uglify",
+    "replace:timestamp",
+    "replace:footer",
+    "replace:version",
+    "cp",
+  ]);
 };
