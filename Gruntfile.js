@@ -1,17 +1,23 @@
 module.exports = function (grunt) {
+  const pkg = grunt.file.readJSON("package.json");
+  const versions = pkg.version.split(".");
+  versions[2] = parseInt(versions[2]) + 1;
+  const appVersion = versions.join(".");
+
   grunt.initConfig({
     pkg: grunt.file.readJSON("package.json"),
     replace: {
-      version: {
+      cdnVersion: {
         options: {
           patterns: [
             {
               match: /\?v=(\d+)/g,
-              replacement: "?v=<%= Date.now() %>",
+              // replacement: "?v=<%= Date.now() %>",
+              replacement: "?v=<%=grunt.template.today('yyyy-mm-dd') %>",
             },
             {
               match: /<p version="version">([^$]+?)<\/p>/g,
-              replacement: '<p version="version">v <%= pkg.version %></p>',
+              replacement: `<p version="version">v ${appVersion}</p>`,
             },
           ],
         },
@@ -44,9 +50,30 @@ module.exports = function (grunt) {
           },
         ],
       },
+      appVersion: {
+        options: {
+          patterns: [
+            {
+              match: /\"version\"\s*:\s*\"\d.\d.\d\s*\"/g,
+              replacement: `"version":"${appVersion}"`,
+            },
+          ],
+        },
+        files: [
+          {
+            expand: true,
+            flatten: true,
+            src: ["package.json"],
+            dest: "./",
+          },
+        ],
+      },
     },
     uglify: {
       options: {
+        // the banner is inserted at the top of the output
+        banner:
+          '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n',
         mangle: {
           reserved: ["jQuery"],
           keep_fargs: false,
@@ -60,6 +87,10 @@ module.exports = function (grunt) {
         files: {
           "index.min.js": ["index.js"],
         },
+      },
+      build: {
+        src: "index.js",
+        dest: "index.min.js",
       },
     },
     cssmin: {
@@ -77,5 +108,30 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks("grunt-contrib-cssmin");
   grunt.loadNpmTasks("grunt-contrib-uglify");
   grunt.loadNpmTasks("grunt-replace");
-  grunt.registerTask("default", ["cssmin", "uglify", "replace:version"]);
+  grunt.registerTask("default", [
+    "build:start",
+    "cssmin",
+    "uglify",
+    "replace:cdnVersion",
+    "build:done",
+  ]);
+
+  grunt.registerTask("prod", [
+    "build:start",
+    "replace:appVersion",
+    "cssmin",
+    "uglify",
+    "replace:cdnVersion",
+    "build:done",
+  ]);
+
+  grunt.registerTask("build:start", function () {
+    grunt.log.write(`Build start ${pkg.name}: ${appVersion} `).ok();
+    grunt.log.write("*** To persist the version run build:prod ***").ok();
+  });
+  grunt.registerTask("build:done", function () {
+    grunt.log
+      .write(`Building is done successfully ${pkg.name}: ${appVersion} `)
+      .ok();
+  });
 };
