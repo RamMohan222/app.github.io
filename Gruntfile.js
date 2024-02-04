@@ -13,7 +13,7 @@ module.exports = function (grunt) {
             {
               match: /\?v=(\d+)/g,
               // replacement: "?v=<%= Date.now() %>",
-              replacement: "?v=<%=grunt.template.today('yyyy-mm-dd') %>",
+              replacement: "?v=<%=grunt.template.today('yyyymmdd') %>",
             },
             {
               match: /<p version="version">([^$]+?)<\/p>/g,

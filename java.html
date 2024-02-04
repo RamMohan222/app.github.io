@@ -2,565 +2,730 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Online training for Java Fullstack, MERN stack">
-    <meta name="keywords" content="Java, Advanced Java, Java Fullstack, MERN stack, ReactJS, NodeJS">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://www.techteachhub.com">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Online training for Java Fullstack, MERN stack" />
+  <meta name="keywords" content="Java, Advanced Java, Java Fullstack, MERN stack, ReactJS, NodeJS" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.techteachhub.com" />
 
-    <meta property="og:title" content="TechTeachHub">
-    <meta property="og:description" content="Online training for Java Fullstack, MERN stack">
-    <meta property="og:image" content="https://techteachhub.com/assets/favicon.png">
-    <meta property="og:url" content="https://www.techteachhub.com">
+  <meta property="og:title" content="TechTeachHub" />
+  <meta property="og:description" content="Online training for Java Fullstack, MERN stack" />
+  <meta property="og:image" content="https://techteachhub.com/assets/favicon.png" />
+  <meta property="og:url" content="https://www.techteachhub.com" />
 
-    <meta name="twitter:card" content="TechTeachHub">
-    <meta name="twitter:title" content="TechTeachHub">
-    <meta name="twitter:description" content="Online training for Java Fullstack, MERN stack">
-    <meta name="twitter:image" content="https://techteachhub.com/assets/favicon.png">
+  <meta name="twitter:card" content="TechTeachHub" />
+  <meta name="twitter:title" content="TechTeachHub" />
+  <meta name="twitter:description" content="Online training for Java Fullstack, MERN stack" />
+  <meta name="twitter:image" content="https://techteachhub.com/assets/favicon.png" />
 
-    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="57x57" href="assets/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="assets/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="assets/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="assets/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="assets/android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="assets/android-chrome-512x512.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
-    <link rel="icon" type="image/ico" href="assets/favicon.ico">
-    <meta name="msapplication-TileImage" content="assets/android-chrome-512x512.png">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="theme-color" content="#ffffff">
-    <link rel="manifest" href="/assets/site.webmanifest">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <link rel="apple-touch-icon" sizes="57x57" href="assets/apple-touch-icon.png" />
+  <link rel="apple-touch-icon" sizes="60x60" href="assets/apple-touch-icon.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="assets/apple-touch-icon.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="assets/apple-touch-icon.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="assets/apple-touch-icon.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="assets/apple-touch-icon.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="assets/apple-touch-icon.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="assets/apple-touch-icon.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/android-chrome-192x192.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/android-chrome-512x512.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png" />
+  <link rel="icon" type="image/ico" href="assets/favicon.ico" />
+  <meta name="msapplication-TileImage" content="assets/android-chrome-512x512.png" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="manifest" href="/assets/site.webmanifest" />
 
-    <!-- boostrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        crossorigin="anonymous">
+  <!-- boostrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    crossorigin="anonymous" />
 
-    <!-- Font Awesome CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet"
-        href="index.min.css?v=2024-01-31-01-31-01-31-01-31-01-31-01-31-01-31-01-31-01-31-01-31-01-31-01-31-01-31-01-31-01-31-01-31-01-31-01-31-01-31">
-    <title>TechTeachHub | Java</title>
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link rel="stylesheet"
+    href="index.min.css?v=20240205-01-31-01-31-01-31-01-31-01-31-01-31-01-31-01-31-01-31-01-31-01-31-01-31-01-31-01-31-01-31-01-31-01-31-01-31-01-31" />
+  <title>TechTeachHub | Java</title>
 </head>
 
 <body>
+  <!-- Notification Banner -->
+  <div class="notification-banner">
+    <p>
+      🚀 Exciting News! Our new <a href="#">Advanced Java Course</a> is now
+      available! Enroll today!
+    </p>
+  </div>
 
-    <!-- Notification Banner -->
-    <div class="notification-banner">
-        <p>🚀 Exciting News! Our new <a href="#">Advanced Java Course</a> is now available! Enroll today!</p>
-    </div>
+  <!-- Navigation -->
+  <div class="container-fluid fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark row">
+      <div class="container-fluid">
+        <a class="navbar-brand ms-2" href="/">
+          <img src="./assets/logo.png" alt="TTH" class="company-logo" />
+          <span class="company-name">TechTeachHub</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-2">
+            <li class="nav-item h3" id="theme">
+              <i class="nav-link fa-regular fa-moon" id="themetype"></i>
+              <!-- <i class="nav-link fa-solid fa-moon h3"></i> -->
+              <!-- <i class="nav-link fa-solid fa-sun h3"></i> -->
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="java.html">Java SE/EE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="react.html">React JS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="java-full-stack.html">Java Full Stack</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="mern.html">MERN Stack</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
 
-    <!-- Navigation -->
-    <div class="container-fluid fixed-top">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark row">
-            <div class="container-fluid">
-                <a class="navbar-brand ms-2" href="/">
-                    <img src="./assets/logo.png" alt="TTH" class="company-logo">
-                    <span class="company-name">TechTeachHub</span>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                    <ul class="navbar-nav me-2">
-                        <li class="nav-item h3" id="theme">
-                            <i class="nav-link fa-regular fa-moon" id="themetype"></i>
-                            <!-- <i class="nav-link fa-solid fa-moon h3"></i> -->
-                            <!-- <i class="nav-link fa-solid fa-sun h3"></i> -->
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="java.html">Java SE/EE</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="react.html">React JS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="java-full-stack.html">Java Full Stack</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="mern.html">MERN Stack</a>
-                        </li>
-                    </ul>
+  <!-- Main Content -->
+  <div class="container-fluid mt-3">
+    <div class="row">
+      <div class="col-12 col-lg-6">
+        <!-- Java Section -->
+        <section id="java">
+          <div class="card tth-card tth-card-content-card">
+            <img src="./assets/java-logo.png" alt="Java Logo" class="circular-logo" />
+            <h2 class="tth-card-title">Java SE/EE Course Topics</h2>
+            <div class="category">
+              <!-- start -->
+              <div class="accordion accordion-flush" id="corejava">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed h3" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseZero" aria-expanded="true" aria-controls="flush-collapseZero">
+                      Introduction and Environment Setup
+                    </button>
+                  </h2>
+                  <div id="flush-collapseZero" class="accordion-collapse collapse text-white bg-dark text-white bg-dark"
+                    data-bs-parent="#corejava">
+                    <div class="accordion-body">
+                      <ul style="list-style: circle">
+                        <li>Introduction to Java</li>
+                        <li>Java Editions</li>
+                        <li>JDK vs JRE vs JVM</li>
+                        <li>JVM Architecture</li>
+                        <li>Java Memory Management</li>
+                        <li>Download and Installation of JDK</li>
+                        <li>Download and Installation of Eclipse IDE</li>
+                        <li>Program execution from CLI</li>
+                        <li>Project creation and execution from IDE</li>
+                        <li>Building the Java Project (JAR)</li>
+                        <li>Build Execution</li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
-            </div>
-        </nav>
-    </div>
-
-    <!-- Main Content -->
-    <div class="container-fluid mt-3">
-
-        <div class="row">
-            <div class="col-12 col-lg-6">
-                <!-- Java Section -->
-                <section id="java">
-                    <div class="card tth-card tth-card-content-card">
-                        <img src="./assets/java-logo.png" alt="Java Logo" class="circular-logo">
-                        <h2 class="tth-card-title">Java SE/EE Course Topics</h2>
-                        <div class="category">
-                            <!-- start -->
-                            <div class="accordion accordion-flush" id="corejava">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed h3" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseZero"
-                                            aria-expanded="true" aria-controls="flush-collapseZero">
-                                            Introduction and Environment Setup
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapseZero"
-                                        class="accordion-collapse collapse text-white bg-dark text-white bg-dark"
-                                        data-bs-parent="#corejava">
-                                        <div class="accordion-body">
-                                            <ul style="list-style: circle;">
-                                                <li>Introduction to Java</li>
-                                                <li>Java Editions</li>
-                                                <li>JDK vs JRE vs JVM</li>
-                                                <li>JVM Architecture</li>
-                                                <li>Java Memory Management</li>
-                                                <li>Download and Installation of JDK</li>
-                                                <li>Download and Installation of Eclipse IDE</li>
-                                                <li>Program execution from CLI</li>
-                                                <li>Project creation and execution from IDE</li>
-                                                <li>Building the Java Project (JAR)</li>
-                                                <li>Build Execution</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed h3" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
-                                            aria-expanded="true" aria-controls="flush-collapseOne">
-                                            Core Concepts
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapseOne" class="accordion-collapse collapse text-white bg-dark"
-                                        data-bs-parent="#corejava">
-                                        <div class="accordion-body">
-                                            <ul title="Core Concepts" style="list-style: circle;">
-                                                <li>Java literals and key words</li>
-                                                <li>Data Types and Variables</li>
-                                                <li>Type casting and types of type casting</li>
-                                                <li>Operators</li>
-                                                <li>Control and Loop Statements</li>
-                                                <li><code>break</code> & <code>continue</code>statements</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed h3" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
-                                            aria-expanded="true" aria-controls="flush-collapseTwo">
-                                            Constructors
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapseTwo" class="accordion-collapse collapse text-white bg-dark"
-                                        data-bs-parent="#corejava">
-                                        <div class="accordion-body">
-                                            <ul title="Constructors" style="list-style: circle;">
-                                                <li>Default Constructor</li>
-                                                <li>Parameterized Constructor</li>
-                                                <li>Copy Constructor</li>
-                                                <li>Static code blocks</li>
-                                                <li>Instance code blocks</li>
-                                                <li>Singleton design pattern</li>
-                                                <li>Factory design pattern</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed h3" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
-                                            aria-expanded="true" aria-controls="flush-collapseThree">
-                                            Methods
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapseThree" class="accordion-collapse collapse text-white bg-dark"
-                                        data-bs-parent="#corejava">
-                                        <div class="accordion-body">
-                                            <ul style="list-style: circle;">
-                                                <li>What is a method ?</li>
-                                                <li>Advantages of methods</li>
-                                                <li>Types of methods</li>
-                                                <li><code>return</code> key word</li>
-                                                <li>Creating and calling a methods</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed h3" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseFour"
-                                            aria-expanded="true" aria-controls="flush-collapseFour">
-                                            Packages and Imports
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapseFour" class="accordion-collapse collapse text-white bg-dark"
-                                        data-bs-parent="#corejava">
-                                        <div class="accordion-body">
-                                            <ul title="Packages and Imports" style="list-style: circle;">
-                                                <li>What is a package?</li>
-                                                <li>Built in packages</li>
-                                                <li>Custom packages</li>
-                                                <li>Imports and static imports</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed h3" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseFive"
-                                            aria-expanded="true" aria-controls="flush-collapseFive">
-                                            Access Modifiers and scopes
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapseFive" class="accordion-collapse collapse text-white bg-dark"
-                                        data-bs-parent="#corejava">
-                                        <div class="accordion-body">
-                                            <ul style="list-style: circle;">
-                                                <li>public </li>
-                                                <li>protected </li>
-                                                <li>package or (default scope)</li>
-                                                <li>private</li>
-                                                <li>final</li>
-                                                <li>static</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed h3" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseSix"
-                                            aria-expanded="true" aria-controls="flush-collapseSix">
-                                            Dealing with Strings
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapseSix" class="accordion-collapse collapse text-white bg-dark"
-                                        data-bs-parent="#corejava">
-                                        <div class="accordion-body">
-                                            <ul style="list-style: circle;">
-                                                <li>Different ways of creating a string</li>
-                                                <li>String manipulation and methods</li>
-                                                <li>String immutability and constant pool</li>
-                                                <li>Advantages and disadvantages of strings manipulation</li>
-                                                <li>StringBuilder and StringBuffer</li>
-                                                <li>StringJoiner and StringTokenizer</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed h3" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseDate"
-                                            aria-expanded="true" aria-controls="flush-collapseDate">
-                                            Date, Time and Calender
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapseDate" class="accordion-collapse collapse text-white bg-dark"
-                                        data-bs-parent="#corejava">
-                                        <div class="accordion-body">
-                                            <ul style="list-style: circle;">
-                                                <li>How to create a date ?</li>
-                                                <li>Date comparisons</li>
-                                                <li>Date operators</li>
-                                                <li>Converting string to date using <code>SimpleDateFormat</code></li>
-                                                <li>Converting date to string format using <code>SimpleDateFormat</code>
-                                                </li>
-                                                <li>How to create a Calender</li>
-                                                <li>How to create a GregorianCalendar</li>
-                                                <li>Timer</li>
-                                                <li>JDK 8 new date API LocalDate, LocalTime and LocalDateTime</li>
-                                                <li>JDK 8 new date API date time operations</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed h3" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven"
-                                            aria-expanded="true" aria-controls="flush-collapseSeven">
-                                            Object Oriented Programming (OOP)
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapseSeven" class="accordion-collapse collapse text-white bg-dark"
-                                        data-bs-parent="#corejava">
-                                        <div class="accordion-body">
-                                            <ul style="list-style: circle;">
-                                                <li>Classes and Objects</li>
-                                                <li>Association (HAS-A)</li>
-                                                <li>Inheritance (IS-A) </li>
-                                                <li>Different types of inheritance</li>
-                                                <li>Interfaces and Abstract Classes</li>
-                                                <li>Functional interfaces vs Marker interfaces</li>
-                                                <li>Static Polymorphism</li>
-                                                <li>Dynamic Polymorphism</li>
-                                                <li>Encapsulation</li>
-                                                <li>Abstraction</li>
-                                                <li>Constructor chaining</li>
-                                                <li><code>super</code> and <code>this</code> key words</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed h3" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#flush-collapse8"
-                                            aria-expanded="false" aria-controls="flush-collapse8">
-                                            Exceptions Handling
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapse8" class="accordion-collapse collapse text-white bg-dark"
-                                        data-bs-parent="#corejava">
-                                        <div class="accordion-body">
-                                            <ul style="list-style: circle;">
-                                                <li>What is an Exception?</li>
-                                                <li>Exceptions and Errors</li>
-                                                <li>Types of exceptions</li>
-                                                <li>Exception hierarchy</li>
-                                                <li>Exception handling with try catch</li>
-                                                <li>Exception handling with try and multi catch</li>
-                                                <li>Exception handling with try catch finally</li>
-                                                <li><code>throw</code> and <code>throws</code> key words</li>
-                                                <li>Examples on built in exceptions</li>
-                                                <li>Creating custom exception and usage</li>
-                                                <li>Creating custom runtime exception and usage</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed h3" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#flush-collapse9"
-                                            aria-expanded="false" aria-controls="flush-collapse9">
-                                            Multithreading and Synchronization
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapse9" class="accordion-collapse collapse text-white bg-dark"
-                                        data-bs-parent="#corejava">
-                                        <div class="accordion-body">
-                                            <ul style="list-style: circle;">
-                                                <li>What is Multi tasking ?</li>
-                                                <li>Multi Process vs Thread</li>
-                                                <li>Concurrent execution using Thread class</li>
-                                                <li>Concurrent execution using Runnable interfaces</li>
-                                                <li>Thread Synchronization</li>
-                                                <li><code>volatile</code> and Atomic types</li>
-                                                <li>Thread states and Thread priorities</li>
-                                                <li>Interrupting a Thread</li>
-                                                <li>Publish and Subscribe pattern example</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed h3" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#flush-collapse12"
-                                            aria-expanded="false" aria-controls="flush-collapse12">
-                                            Immutable classes and Wrapper classes
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapse12" class="accordion-collapse collapse text-white bg-dark"
-                                        data-bs-parent="#corejava">
-                                        <div class="accordion-body">
-                                            <ul style="list-style: circle;">
-                                                <li>What is an Immutable class ?</li>
-                                                <li>Advantages with immutable classes</li>
-                                                <li>Predefined Immutable classes</li>
-                                                <li>Creating customer immutable class</li>
-                                                <li>Wrapper classes</li>
-                                                <li>Type conversions from primitive to wrapper</li>
-                                                <li>Type conversions from wrapper to primitive</li>
-                                                <li>Builder Design pattern</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed h3" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#flush-collapse10"
-                                            aria-expanded="false" aria-controls="flush-collapse10">
-                                            Data Structures and Collection
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapse10" class="accordion-collapse collapse text-white bg-dark"
-                                        data-bs-parent="#corejava">
-                                        <div class="accordion-body">
-                                            <ul style="list-style: circle;">
-                                                <li>Vector, Hashtable, Stack</li>
-                                                <li>List implementations ArrayList and LinkedList</li>
-                                                <li>Set implementations HashSet, LinkedHashSet, TreeSet</li>
-                                                <li>Map implementations HashMap, LinkedHashMap, TreeMap</li>
-                                                <li>Iterators, ListIterator and Enumerations</li>
-                                                <li>Properties and Dynamic properties from properties file</li>
-                                                <li>Comparator and Comparable</li>
-                                                <li>Sorting and Searching</li>
-                                                <li>Concurrent Collection</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed h3" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#flush-collapse11"
-                                            aria-expanded="false" aria-controls="flush-collapse11">
-                                            Files and Streams
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapse11" class="accordion-collapse collapse text-white bg-dark"
-                                        data-bs-parent="#corejava">
-                                        <div class="accordion-body">
-                                            <ul style="list-style: circle;">
-                                                <li>Creating File and Directory</li>
-                                                <li>What is a stream, and types of streams</li>
-                                                <li>Reading and Writing into a File</li>
-                                                <li>Readers and Writers</li>
-                                                <li>InputStream and OutputStream</li>
-                                                <li>Serialization and Externalization</li>
-                                                <li><code>transient</code> key word</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed h3" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#flush-collapse13"
-                                            aria-expanded="false" aria-controls="flush-collapse13">
-                                            MySQL Database
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapse13" class="accordion-collapse collapse text-white bg-dark"
-                                        data-bs-parent="#corejava">
-                                        <div class="accordion-body">
-                                            <ul style="list-style: circle;">
-                                                <li>MySQL installation</li>
-                                                <li>Operations on Schemas (creating and deleting)</li>
-                                                <li>Data Definition Language (DDL)</li>
-                                                <li>Data Manipulation Language (DML)</li>
-                                                <li>Data Query Language (DQL)</li>
-                                                <li>Data Transaction Language (DTL)</li>
-                                                <li>Functions and constraints</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed h3" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#flush-collapse14"
-                                            aria-expanded="false" aria-controls="flush-collapse14">
-                                            JDBC (Java DataBase Connectivity)
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapse14" class="accordion-collapse collapse text-white bg-dark"
-                                        data-bs-parent="#corejava">
-                                        <div class="accordion-body">
-                                            <ul style="list-style: circle;">
-                                                <li>What is JDBC ?</li>
-                                                <li>Types of JDBC drivers</li>
-                                                <li>JDBC connection with MySQL</li>
-                                                <li>Statements</li>
-                                                <li>Prepared Statements</li>
-                                                <li>Callable statements</li>
-                                                <li>Batch execution</li>
-                                                <li>Transactions</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end -->
-                            <i>For more detailed topics download the full course curriculum</i>
-                            <div class="d-grid gap-2 mt-4">
-                                <a class="btn btn-primary"
-                                    href="#tally-open=nGRaXp&tally-layout=modal&tally-emoji-text=👋&tally-emoji-animation=wave">Download
-                                    Full Course Curriculum <i class="fas fa-download"></i></a>
-                            </div>
-                        </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed h3" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseOne" aria-expanded="true" aria-controls="flush-collapseOne">
+                      Core Concepts
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse text-white bg-dark"
+                    data-bs-parent="#corejava">
+                    <div class="accordion-body">
+                      <ul title="Core Concepts" style="list-style: circle">
+                        <li>Java literals and key words</li>
+                        <li>Data Types and Variables</li>
+                        <li>Type casting and types of type casting</li>
+                        <li>Operators</li>
+                        <li>Control and Loop Statements</li>
+                        <li>
+                          <code>break</code> & <code>continue</code>statements
+                        </li>
+                      </ul>
                     </div>
-
-                    <h2 class="text-center mt-4">Additional Learnings</h2>
-                    <div class="text-center mt-2">
-                        <span class="badge text-bg-info">Eclipse IDE</span>
-                        <span class="badge text-bg-info">Practice programs</span>
-                        <span class="badge text-bg-info">Interview Questions</span>
-                        <span class="badge text-bg-info">JDK 8 Features</span>
-                        <span class="badge text-bg-info">Git and Github</span>
-                        <span class="badge text-bg-info">Common Design Patterns</span>
-                        <span class="badge text-bg-info">Maven</span>
-                        <span class="badge text-bg-info">JUnit</span>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed h3" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseTwo" aria-expanded="true" aria-controls="flush-collapseTwo">
+                      Constructors
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse text-white bg-dark"
+                    data-bs-parent="#corejava">
+                    <div class="accordion-body">
+                      <ul title="Constructors" style="list-style: circle">
+                        <li>Default Constructor</li>
+                        <li>Parameterized Constructor</li>
+                        <li>Copy Constructor</li>
+                        <li>Static code blocks</li>
+                        <li>Instance code blocks</li>
+                        <li>Singleton design pattern</li>
+                        <li>Factory design pattern</li>
+                      </ul>
                     </div>
-                    <!-- Batch Timings Card -->
-                    <div class="card tth-card batch-timings-card mt-4">
-                        <h2 class="tth-card-title">Batch Timings</h2>
-                        <ul class="batch-timings">
-                            <li>Batch 1: Monday and Wednesday, 6:00 PM - 8:00 PM</li>
-                            <li>Batch 2: Tuesday and Thursday, 10:00 AM - 12:00 PM</li>
-                            <li>Batch 3: Saturday, 3:00 PM - 5:00 PM</li>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed h3" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseThree" aria-expanded="true" aria-controls="flush-collapseThree">
+                      Methods
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse text-white bg-dark"
+                    data-bs-parent="#corejava">
+                    <div class="accordion-body">
+                      <ul style="list-style: circle">
+                        <li>What is a method ?</li>
+                        <li>Advantages of methods</li>
+                        <li>Types of methods</li>
+                        <li><code>return</code> key word</li>
+                        <li>Creating and calling a methods</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed h3" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseFour" aria-expanded="true" aria-controls="flush-collapseFour">
+                      Packages and Imports
+                    </button>
+                  </h2>
+                  <div id="flush-collapseFour" class="accordion-collapse collapse text-white bg-dark"
+                    data-bs-parent="#corejava">
+                    <div class="accordion-body">
+                      <ul title="Packages and Imports" style="list-style: circle">
+                        <li>What is a package?</li>
+                        <li>Built in packages</li>
+                        <li>Custom packages</li>
+                        <li>Imports and static imports</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed h3" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseFive" aria-expanded="true" aria-controls="flush-collapseFive">
+                      Access Modifiers and scopes
+                    </button>
+                  </h2>
+                  <div id="flush-collapseFive" class="accordion-collapse collapse text-white bg-dark"
+                    data-bs-parent="#corejava">
+                    <div class="accordion-body">
+                      <ul style="list-style: circle">
+                        <li>public</li>
+                        <li>protected</li>
+                        <li>package or (default scope)</li>
+                        <li>private</li>
+                        <li>final</li>
+                        <li>static</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed h3" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseSix" aria-expanded="true" aria-controls="flush-collapseSix">
+                      Dealing with Strings
+                    </button>
+                  </h2>
+                  <div id="flush-collapseSix" class="accordion-collapse collapse text-white bg-dark"
+                    data-bs-parent="#corejava">
+                    <div class="accordion-body">
+                      <ul style="list-style: circle">
+                        <li>Different ways of creating a string</li>
+                        <li>String manipulation and methods</li>
+                        <li>String immutability and constant pool</li>
+                        <li>
+                          Advantages and disadvantages of strings manipulation
+                        </li>
+                        <li>StringBuilder and StringBuffer</li>
+                        <li>StringJoiner and StringTokenizer</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed h3" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseDate" aria-expanded="true" aria-controls="flush-collapseDate">
+                      Date, Time and Calender
+                    </button>
+                  </h2>
+                  <div id="flush-collapseDate" class="accordion-collapse collapse text-white bg-dark"
+                    data-bs-parent="#corejava">
+                    <div class="accordion-body">
+                      <ul style="list-style: circle">
+                        <li>How to create a date ?</li>
+                        <li>Date comparisons</li>
+                        <li>Date operators</li>
+                        <li>
+                          Converting string to date using
+                          <code>SimpleDateFormat</code>
+                        </li>
+                        <li>
+                          Converting date to string format using
+                          <code>SimpleDateFormat</code>
+                        </li>
+                        <li>How to create a Calender</li>
+                        <li>How to create a GregorianCalendar</li>
+                        <li>Timer</li>
+                        <li>
+                          JDK 8 new date API LocalDate, LocalTime and
+                          LocalDateTime
+                        </li>
+                        <li>JDK 8 new date API date time operations</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed h3" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseSeven" aria-expanded="true" aria-controls="flush-collapseSeven">
+                      Object Oriented Programming (OOP)
+                    </button>
+                  </h2>
+                  <div id="flush-collapseSeven" class="accordion-collapse collapse text-white bg-dark"
+                    data-bs-parent="#corejava">
+                    <div class="accordion-body">
+                      <ul style="list-style: circle">
+                        <li>Classes and Objects</li>
+                        <li>Association (HAS-A)</li>
+                        <li>Inheritance (IS-A)</li>
+                        <li>Different types of inheritance</li>
+                        <li>Interfaces and Abstract Classes</li>
+                        <li>Functional interfaces vs Marker interfaces</li>
+                        <li>Static Polymorphism</li>
+                        <li>Dynamic Polymorphism</li>
+                        <li>Encapsulation</li>
+                        <li>Abstraction</li>
+                        <li>Constructor chaining</li>
+                        <li>
+                          <code>super</code> and <code>this</code> key words
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed h3" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapse8" aria-expanded="false" aria-controls="flush-collapse8">
+                      Exceptions Handling
+                    </button>
+                  </h2>
+                  <div id="flush-collapse8" class="accordion-collapse collapse text-white bg-dark"
+                    data-bs-parent="#corejava">
+                    <div class="accordion-body">
+                      <ul style="list-style: circle">
+                        <li>What is an Exception?</li>
+                        <li>Exceptions and Errors</li>
+                        <li>Types of exceptions</li>
+                        <li>Exception hierarchy</li>
+                        <li>Exception handling with try catch</li>
+                        <li>Exception handling with try and multi catch</li>
+                        <li>Exception handling with try catch finally</li>
+                        <li>
+                          <code>throw</code> and <code>throws</code> key words
+                        </li>
+                        <li>Examples on built in exceptions</li>
+                        <li>Creating custom exception and usage</li>
+                        <li>Creating custom runtime exception and usage</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed h3" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapse9" aria-expanded="false" aria-controls="flush-collapse9">
+                      Multithreading and Synchronization
+                    </button>
+                  </h2>
+                  <div id="flush-collapse9" class="accordion-collapse collapse text-white bg-dark"
+                    data-bs-parent="#corejava">
+                    <div class="accordion-body">
+                      <ul style="list-style: circle">
+                        <li>What is Multi tasking ?</li>
+                        <li>Multi Process vs Thread</li>
+                        <li>Concurrent execution using Thread class</li>
+                        <li>
+                          Concurrent execution using Runnable interfaces
+                        </li>
+                        <li>Thread Synchronization</li>
+                        <li><code>volatile</code> and Atomic types</li>
+                        <li>Thread states and Thread priorities</li>
+                        <li>Interrupting a Thread</li>
+                        <li>Publish and Subscribe pattern example</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed h3" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapse12" aria-expanded="false" aria-controls="flush-collapse12">
+                      Immutable classes and Wrapper classes
+                    </button>
+                  </h2>
+                  <div id="flush-collapse12" class="accordion-collapse collapse text-white bg-dark"
+                    data-bs-parent="#corejava">
+                    <div class="accordion-body">
+                      <ul style="list-style: circle">
+                        <li>What is an Immutable class ?</li>
+                        <li>Advantages with immutable classes</li>
+                        <li>Predefined Immutable classes</li>
+                        <li>Creating customer immutable class</li>
+                        <li>Wrapper classes</li>
+                        <li>Type conversions from primitive to wrapper</li>
+                        <li>Type conversions from wrapper to primitive</li>
+                        <li>Builder Design pattern</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed h3" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapse10" aria-expanded="false" aria-controls="flush-collapse10">
+                      Data Structures and Collection
+                    </button>
+                  </h2>
+                  <div id="flush-collapse10" class="accordion-collapse collapse text-white bg-dark"
+                    data-bs-parent="#corejava">
+                    <div class="accordion-body">
+                      <ul style="list-style: circle">
+                        <li>Vector, Hashtable, Stack</li>
+                        <li>List implementations ArrayList and LinkedList</li>
+                        <li>
+                          Set implementations HashSet, LinkedHashSet, TreeSet
+                        </li>
+                        <li>
+                          Map implementations HashMap, LinkedHashMap, TreeMap
+                        </li>
+                        <li>Iterators, ListIterator and Enumerations</li>
+                        <li>
+                          Properties and Dynamic properties from properties
+                          file
+                        </li>
+                        <li>Comparator and Comparable</li>
+                        <li>Sorting and Searching</li>
+                        <li>Concurrent Collection</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed h3" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapse11" aria-expanded="false" aria-controls="flush-collapse11">
+                      Files and Streams
+                    </button>
+                  </h2>
+                  <div id="flush-collapse11" class="accordion-collapse collapse text-white bg-dark"
+                    data-bs-parent="#corejava">
+                    <div class="accordion-body">
+                      <ul style="list-style: circle">
+                        <li>Creating File and Directory</li>
+                        <li>What is a stream, and types of streams</li>
+                        <li>Reading and Writing into a File</li>
+                        <li>Readers and Writers</li>
+                        <li>InputStream and OutputStream</li>
+                        <li>Serialization and Externalization</li>
+                        <li><code>transient</code> key word</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed h3" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapse13" aria-expanded="false" aria-controls="flush-collapse13">
+                      MySQL Database
+                    </button>
+                  </h2>
+                  <div id="flush-collapse13" class="accordion-collapse collapse text-white bg-dark"
+                    data-bs-parent="#corejava">
+                    <div class="accordion-body">
+                      <ul style="list-style: circle">
+                        <li>MySQL installation</li>
+                        <li>Operations on Schemas (creating and deleting)</li>
+                        <li>Data Definition Language (DDL)</li>
+                        <li>Data Manipulation Language (DML)</li>
+                        <li>Data Query Language (DQL)</li>
+                        <li>Data Transaction Language (DTL)</li>
+                        <li>Functions and constraints</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed h3" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapse14" aria-expanded="false" aria-controls="flush-collapse14">
+                      JDBC (Java DataBase Connectivity)
+                    </button>
+                  </h2>
+                  <div id="flush-collapse14" class="accordion-collapse collapse text-white bg-dark"
+                    data-bs-parent="#corejava">
+                    <div class="accordion-body">
+                      <ul style="list-style: circle">
+                        <li>What is JDBC ?</li>
+                        <li>Types of JDBC drivers</li>
+                        <li>JDBC connection with MySQL</li>
+                        <li>SQL queries execution using Statements</li>
+                        <li>
+                          SQL queries execution using Prepared Statements
+                        </li>
+                        <li>
+                          SQL queries execution using Callable statements
+                        </li>
+                        <li>JDBC Batch execution</li>
+                        <li>Transactions</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed h3" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapse15" aria-expanded="false" aria-controls="flush-collapse15">
+                        Web Technologies
+                      </button>
+                    </h2>
+                    <div id="flush-collapse15" class="accordion-collapse collapse text-white bg-dark"
+                      data-bs-parent="#corejava">
+                      <div class="accordion-body">
+                        <ul style="list-style: circle">
+                          <li>HTML 5</li>
+                          <li>CSS</li>
+                          <li>Java Script</li>
+                          <li>JS data types and control statements</li>
+                          <li>Arrays, Object and its methods</li>
+                          <li>Functions</li>
+                          <li>ES 6 features</li>
+                          <li>DOM API</li>
+                          <li>Fetch API</li>
+                          <li>JQuery</li>
                         </ul>
+                      </div>
                     </div>
-                </section>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed h3" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapse16" aria-expanded="false" aria-controls="flush-collapse16">
+                        Servlets
+                      </button>
+                    </h2>
+                    <div id="flush-collapse16" class="accordion-collapse collapse text-white bg-dark"
+                      data-bs-parent="#corejava">
+                      <div class="accordion-body">
+                        <ul style="list-style: circle">
+                          <li>Web Applications</li>
+                          <li>Types of Web Applications</li>
+                          <li>Web Server and Web Application Server</li>
+                          <li>How Web Applications work?</li>
+                          <li>What is a Servlet</li>
+                          <li>Life Cycle of Servlet</li>
+                          <li>Deployment Descriptor: web.xml file</li>
+                          <li>welcome-file-list in web.xml</li>
+                          <li>load-on-startup in web.xml</li>
+                          <li>Servlet Registration and Mapping</li>
+                          <li>Servlet and GenericServlet</li>
+                          <li>HttpServlet API and methods</li>
+                          <li>
+                            Dispatching Request from servlet to other
+                            resources
+                          </li>
+                          <li>sendRedirect in servlet and execution flow</li>
+                          <li>Attributes</li>
+                          <li>
+                            Stateless and Session Management in servlets
+                          </li>
+                          <li>Cookie in servlet</li>
+                          <li>Hidden field in servlet</li>
+                          <li>URL rewriting in servlet</li>
+                          <li>HttpSession in servlet</li>
+                          <li>
+                            Servlet Init parameters and ServletConfig
+                            interface
+                          </li>
+                          <li>
+                            Servlet context parameters and ServletContext
+                            interface
+                          </li>
+                          <li>
+                            ServletContextEvent and ServletContextListener
+                          </li>
+                          <li>HttpSessionEvent and HttpSessionListener</li>
+                          <li>
+                            ServletRequestEvent and ServletRequestListener
+                          </li>
+                          <li>Listers registration</li>
+                          <li>Filter and FilterConfig</li>
+                          <li>Filter registration and mappings</li>
+                          <li>
+                            Building and Deploying web application in Tomcat
+                            Server
+                          </li>
+                          <li>Updating Tomcat configuration</li>
+                          <li>
+                            Authentication and Authorization for web
+                            applications
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed h3" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapse17" aria-expanded="false" aria-controls="flush-collapse17">
+                        Java Server Pages (JSP)
+                      </button>
+                    </h2>
+                    <div id="flush-collapse17" class="accordion-collapse collapse text-white bg-dark"
+                      data-bs-parent="#corejava">
+                      <div class="accordion-body">
+                        <ul style="list-style: circle">
+                          <li>Life cycle of JSP</li>
+                          <li>Scripting elements</li>
+                          <ul>
+                            <li>JSP expression tag</li>
+                            <li>JSP declaration tag</li>
+                            <li>JSP scriptlet tag</li>
+                          </ul>
+                          <li>Implicit objects</li>
+                          <ul>
+                            <li>JSP out (JspWriter)</li>
+                            <li>JSP request</li>
+                            <li>JSP response</li>
+                            <li>JSP config</li>
+                            <li>JSP application</li>
+                            <li>JSP session</li>
+                            <li>JSP pageContext</li>
+                            <li>JSP page</li>
+                            <li>JSP exception</li>
+                          </ul>
+                          <li>Directive elements</li>
+                          <ul>
+                            <li>JSP page directive</li>
+                            <li>JSP include directive</li>
+                            <li>JSP taglib directive</li>
+                          </ul>
+                          <li>Action elements or tags</li>
+                          <ul>
+                            <li>jsp:forward</li>
+                            <li>jsp:include</li>
+                            <li>jsp:param</li>
+                            <li>jsp:useBean</li>
+                            <li>jsp:setProperty</li>
+                            <li>jsp:getProperty</li>
+                            <li>jsp:plugin</li>
+                            <li>jsp:fallback</li>
+                          </ul>
+                          <li>Exception handling in JSP</li>
+                          <li>Expression language</li>
+                          <li>Expression language implicit objects</li>
+                          <li>JSP Standard Tag Library (JSTL)</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- end -->
+                <i>For more detailed topics download the full course
+                  curriculum</i>
+                <div class="d-grid gap-2 mt-4">
+                  <a class="btn btn-primary"
+                    href="#tally-open=nGRaXp&tally-layout=modal&tally-emoji-text=👋&tally-emoji-animation=wave">Download
+                    Full Course Curriculum
+                    <i class="fas fa-download"></i></a>
+                </div>
+              </div>
             </div>
-        </div>
+          </div>
 
+          <h2 class="text-center mt-4">Additional Learnings</h2>
+          <div class="text-center mt-2">
+            <span class="badge text-bg-info">Eclipse IDE</span>
+            <span class="badge text-bg-info">Practice programs</span>
+            <span class="badge text-bg-info">Interview Questions</span>
+            <span class="badge text-bg-info">JDK 8 Features</span>
+            <span class="badge text-bg-info">Git and Github</span>
+            <span class="badge text-bg-info">Common Design Patterns</span>
+            <span class="badge text-bg-info">Maven</span>
+            <span class="badge text-bg-info">JUnit</span>
+            <span class="badge text-bg-info">HTML</span>
+            <span class="badge text-bg-info">CSS</span>
+            <span class="badge text-bg-info">JavaScript</span>
+            <span class="badge text-bg-info">Tomcat</span>
+          </div>
+          <!-- Batch Timings Card -->
+          <div class="card tth-card batch-timings-card mt-4">
+            <h2 class="tth-card-title">Batch Timings</h2>
+            <ul class="batch-timings text-start px-5">
+              <li>Batch 1: Monday and Wednesday, 7:00 PM - 8:00 PM</li>
+              <li>Batch 2: Thursday and Saturday, 8:30 AM - 9:30 AM</li>
+              <li>Batch 3: Saturday, 3:00 PM - 5:00 PM</li>
+              <li class="fw-normal text-center">
+                <small>
+                  <i>* For batch details contact the below number</i>
+                </small>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
     </div>
+  </div>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container text-center">
-            <div class="row">
-                <div class="col-md-4">
-                    <h5>Contact Us</h5>
-                    <p>Email: techteachhub@outlook.com</p>
-                    <p>Phone: +91 89193-70764</p>
-                </div>
-                <!-- <div class="col-12 col-md-4">
-                    <h5>Address</h5>
-                    <p>Online classes only, India</p>
-                </div> -->
-                <div class="col-md-4">
-                    <h5>Classes Mode: Online</h5>
-                    <p>Offline classes will open soon</p>
-                </div>
-                <div class="col-md-4">
-                    <p class="copy-right">&copy; 2024 TechTeachHub.com All rights reserved.</p>
-                    <p version="version">v 1.0.3</p>
-                </div>
-            </div>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-4">
+          <h5>Contact Us</h5>
+          <p>Email: techteachhub@outlook.com</p>
+          <p>Phone: +91 89193-70764</p>
         </div>
-    </footer>
+        <div class="col-md-4">
+          <h5>Classes Mode: Online</h5>
+          <p>Offline classes will open soon</p>
+        </div>
+        <div class="col-md-4">
+          <p class="copy-right">
+            &copy; 2024 TechTeachHub.com All rights reserved.
+          </p>
+          <p version="version">v 1.0.4</p>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-    <!-- Bootstrap JS and jQuery -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script async src="https://tally.so/widgets/embed.js"></script>
-    <script
-        src="index.min.js?v=2024-01-31-01-31-01-31-01-31-01-31-01-31-01-31-01-31-01-31-01-31-01-31-01-31-01-31-01-31-01-31-01-31-01-31-01-31-01-31"></script>
-
+  <!-- Bootstrap JS and jQuery -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script async src="https://tally.so/widgets/embed.js"></script>
+  <script src="index.min.js?v=20240205"></script>
 </body>
 
 </html>
