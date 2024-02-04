@@ -104,7 +104,15 @@ module.exports = function (grunt) {
         },
       },
     },
+    watch: {
+      scripts: {
+        files: ["index.js", "index.css"],
+        // tasks: ["default"],
+      },
+    },
   });
+
+  // config end
   grunt.loadNpmTasks("grunt-contrib-cssmin");
   grunt.loadNpmTasks("grunt-contrib-uglify");
   grunt.loadNpmTasks("grunt-replace");
@@ -124,6 +132,8 @@ module.exports = function (grunt) {
     "replace:cdnVersion",
     "build:done",
   ]);
+
+  grunt.registerTask("watch", ["watch"]);
 
   grunt.registerTask("build:start", function () {
     grunt.log.write(`Build start ${pkg.name}: ${appVersion} `).ok();

@@ -1,13 +1,14 @@
 {
   "name": "app.github.io",
-  "version":"1.0.4",
+  "version":"1.0.5",
   "description": "[X]: SEO is done\r [ ]: Needs to optimize the CSS in all HTML's\r [ ]: Needs to add batches html\r [ ]: Needs to update course content in all pages\r [ ]: Java should be Jav + Advanced Java\r [ ]: Needs to plan Automation testing ??",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:cli": "grunt",
     "build": "node_modules/.bin/grunt",
-    "build:prod": "node_modules/.bin/grunt prod"
+    "build:prod": "node_modules/.bin/grunt prod",
+    "watch": "node_modules/.bin/grunt watch"
   },
   "repository": {
     "type": "git",
@@ -28,6 +29,7 @@
     "grunt": "^1.6.1",
     "grunt-contrib-cssmin": "^5.0.0",
     "grunt-contrib-uglify": "^5.2.2",
+    "grunt-contrib-watch": "^1.1.0",
     "grunt-replace": "^2.0.2"
   }
 }

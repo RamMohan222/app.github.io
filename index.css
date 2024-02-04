@@ -10,6 +10,9 @@
   --tth-card-mern-bg-color: #64b5f6;
   --tth-card-react-bg-color: #ffb74d;
 
+  --tth-card-title-color-light: #063a72;
+  --tth-card-title-color-dark: #adb5bd;
+
   --tth-card-batch-timing-header-color: #000;
   --card-color-dark: #adb5bd;
   --card-bg-color-dark: rgb(32, 32, 32);
@@ -120,6 +123,13 @@ body {
   color: var(--tth-card-color);
 }
 
+.java .tth-card-title,
+.mern .tth-card-title,
+.react .tth-card-title,
+.java-full-stack .tth-card-title {
+  color: var(--tth-card-color);
+}
+
 .java {
   background-color: var(--tth-card-java-bg-color);
 }
@@ -155,9 +165,8 @@ body {
   background-color: var(--card-bg-color-light);
 }
 
-.tth-card-content-card .tth-card-title,
-.batch-timings-card .tth-card-title {
-  color: #063a72;
+.tth-card-title {
+  color: var(--tth-card-title-color-light);
 }
 
 .circular-logo {

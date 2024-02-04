@@ -48,6 +48,8 @@ function applyDarkTheme() {
     "background-color": "var(--card-bg-color-dark)",
     color: "var(--card-color-dark)",
   });
+
+  $(".tth-card-title").css({ color: "var(--tth-card-title-color-dark)" });
 }
 
 function applyLightTheme() {
@@ -65,4 +67,5 @@ function applyLightTheme() {
     "background-color": "var(--card-bg-color-light)",
     color: "var(--card-color-light)",
   });
+  $(".tth-card-title").css({ color: "var(--tth-card-title-color-light)" });
 }
