@@ -19,6 +19,7 @@
 
   --card-color-light: #000;
   --card-bg-color-light: #fff;
+  --color: black;
 }
 
 /* TODO: themeing */
@@ -127,6 +128,7 @@ body {
 .mern .tth-card-title,
 .react .tth-card-title,
 .java-full-stack .tth-card-title {
+  /* default color is overridden */
   color: var(--tth-card-color);
 }
 

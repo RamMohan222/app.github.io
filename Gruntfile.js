@@ -107,7 +107,7 @@ module.exports = function (grunt) {
     watch: {
       scripts: {
         files: ["index.js", "index.css"],
-        // tasks: ["default"],
+        tasks: ["default"],
       },
     },
   });
