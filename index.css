@@ -1,3 +1,6 @@
+
+/* @import url('font URI'); */
+
 :root {
   --bg-color-light: rgba(241, 241, 241, 0.815);
   --bg-color-dark: #343a40;
@@ -14,13 +17,14 @@
 
   --tth-card-batch-timing-header-color: #000;
   --card-color-dark: #adb5bd;
-  --card-bg-color-dark: rgb(32, 32, 32);
+  --card-bg-color-dark: #1b263b;
 
   --card-color-light: #000;
   --card-bg-color-light: #fff;
   --color: black;
 }
 
+/* mission desc font*/
 .space-grotesk-font {
   font-family: "Space Grotesk", sans-serif;
   font-optical-sizing: auto;
@@ -28,6 +32,7 @@
   font-style: normal;
 }
 
+/* course card font*/
 .asap-font {
   font-family: "Asap", sans-serif;
   font-optical-sizing: auto;
@@ -45,6 +50,7 @@
   font-size: large;
 }
 
+/* title font*/
 .teko-font {
   font-family: "Teko", "San Francisco", sans-serif;
   font-optical-sizing: auto;
@@ -142,7 +148,7 @@ body {
 }
 
 .tth-card-title {
-  font-family: "San Francisco", sans-serif;
+  font-family: "Teko", "San Francisco", sans-serif;
   font-size: 1.5em;
   font-weight: bold;
 }
