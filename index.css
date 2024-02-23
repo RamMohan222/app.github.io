@@ -1,14 +1,13 @@
 :root {
   --bg-color-light: rgba(241, 241, 241, 0.815);
-  --bg-color-dark: rgba(24, 24, 26, 0.815);
+  --bg-color-dark: #343a40;
   --footer-bg-color: #f8f9fa;
   --box-shadow-color: rgba(0, 0, 0, 0.2);
 
-  --tth-card-color: #fff;
-  --tth-card-java-bg-color: #ee0290;
-  --tth-card-react-bg-color: #d602ee;
-  --tth-card-java-full-stack-bg-color: #41c300;
-  --tth-card-mern-bg-color: #ee6002;
+  --tth-card-java-bg-color: #34a0a4;
+  --tth-card-react-bg-color: #52b69a;
+  --tth-card-java-full-stack-bg-color: #b5e48c;
+  --tth-card-mern-bg-color: #99d98c;
 
   --tth-card-title-color-light: #063a72;
   --tth-card-title-color-dark: #adb5bd;
@@ -123,6 +122,11 @@ body {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px var(--box-shadow-color) !important;
+}
+
+.benefit-card {
+  background-color: #14213d; 
+  color:#e9ecef;
 }
 
 .tth-card-header {
