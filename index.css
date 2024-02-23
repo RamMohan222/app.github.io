@@ -5,10 +5,10 @@
   --box-shadow-color: rgba(0, 0, 0, 0.2);
 
   --tth-card-color: #fff;
-  --tth-card-java-bg-color: #e57373;
-  --tth-card-java-full-stack-bg-color: #81c784;
-  --tth-card-mern-bg-color: #64b5f6;
-  --tth-card-react-bg-color: #ffb74d;
+  --tth-card-java-bg-color: #ee0290;
+  --tth-card-react-bg-color: #d602ee;
+  --tth-card-java-full-stack-bg-color: #41c300;
+  --tth-card-mern-bg-color: #ee6002;
 
   --tth-card-title-color-light: #063a72;
   --tth-card-title-color-dark: #adb5bd;
@@ -20,6 +20,30 @@
   --card-color-light: #000;
   --card-bg-color-light: #fff;
   --color: black;
+}
+
+.space-grotesk-font {
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;  /* Use a value from 300 to 700 */
+  font-style: normal;
+}
+
+.asap-font {
+  font-family: "Asap", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 350; /* Use a value from 100 to 900 */
+  /* font-style: italic; */
+  font-variation-settings: "wdth" 100;
+}
+
+/*Can use for comments*/
+.caveat-font {
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500; /* Use a value from 400 to 700 */
+  font-style: normal;
+  font-size: large;
 }
 
 /* TODO: themeing */

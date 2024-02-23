@@ -1,5 +1,5 @@
 $.when($.ready).then(function () {
-  var selectedTheme = localStorage.getItem("themetype");
+  var selectedTheme = localStorage.getItem("theme-type");
   if (selectedTheme) {
     if (selectedTheme === "fa-moon") {
       applyDarkTheme();
@@ -21,7 +21,7 @@ $(document).on("click", function (event) {
 // menu toggle:end
 
 $("#theme").click(function () {
-  var currentTheme = localStorage.getItem("themetype");
+  var currentTheme = localStorage.getItem("theme-type");
   if (!currentTheme) {
     currentTheme = "fa-sun";
   }
@@ -34,8 +34,8 @@ $("#theme").click(function () {
 });
 
 function applyDarkTheme() {
-  localStorage.setItem("themetype", "fa-moon");
-  $("#themetype").removeClass("fa-moon").addClass("fa-sun");
+  localStorage.setItem("theme-type", "fa-moon");
+  $("#theme-type").removeClass("fa-moon").addClass("fa-sun");
   $("body").css({ "background-color": "var(--bg-color-dark)" });
   $(".mission-title, .mission-desc").css({ color: "var(--card-color-dark)" });
 
@@ -53,8 +53,8 @@ function applyDarkTheme() {
 }
 
 function applyLightTheme() {
-  localStorage.setItem("themetype", "fa-sun");
-  $("#themetype").removeClass("fa-sun").addClass("fa-moon");
+  localStorage.setItem("theme-type", "fa-sun");
+  $("#theme-type").removeClass("fa-sun").addClass("fa-moon");
   $("body").css({ "background-color": "var(--bg-color-light)" });
   $(".mission-title, .mission-desc").css({ color: "var(--card-color-light)" });
 
