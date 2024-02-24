@@ -12,8 +12,8 @@ module.exports = function (grunt) {
           patterns: [
             {
               match: /\?v=(\d+)/g,
-              // replacement: "?v=<%= Date.now() %>",
-              replacement: "?v=<%=grunt.template.today('yyyymmdd') %>",
+              replacement: "?v=<%= Date.now() %>",
+              // replacement: "?v=<%=grunt.template.today('yyyymmdd') %>",
             },
             {
               match: /<p version="version">([^$]+?)<\/p>/g,
