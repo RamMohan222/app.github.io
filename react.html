@@ -103,58 +103,377 @@
     <div class="container-fluid mt-3">
         <div class="row">
             <div class="col-12 col-lg-6">
-                <!-- React Section -->
-                <section id="react">
+                <!-- Java Section -->
+                <section id="java">
                     <div class="card tth-card tth-card-content-card">
-                        <img src="./assets/reactjs-logo.png" alt="React Logo" class="circular-logo">
-                        <h2 class="tth-card-title">ReactJS Course Topics</h2>
-                        <span class="category">
-                            <ul class="topic-list">
-                                <li>Introduction to React
-                                    <ul>
-                                        <li>React Components</li>
-                                        <li>Props and State</li>
-                                        <li>Component Lifecycle</li>
-                                    </ul>
-                                </li>
-                                <li>React Router Dom
-                                    <ul>
-                                        <li>Introduction to Routing</li>
-                                        <li>Route Parameters</li>
-                                        <li>Navigation with Links</li>
-                                    </ul>
-                                </li>
-                                <li>State Management with Redux
-                                    <ul>
-                                        <li>Introduction to Redux</li>
-                                        <li>Actions and Reducers</li>
-                                        <li>Store and Middleware</li>
-                                    </ul>
-                                </li>
-                                <!-- ... Add more categories and topics as needed ... -->
-                            </ul>
+                        <img src="./assets/reactjs-logo.png" alt="Java Logo" class="circular-logo" />
+                        <h2 class="tth-card-title">React JS Course Topics</h2>
+                        <div class="category">
+                            <!-- start -->
+                            <div class="accordion accordion-flush" id="corejava">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed h3" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseZero"
+                                            aria-expanded="true" aria-controls="flush-collapseZero">
+                                            1. HTML (HyperText Markup Language):
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseZero"
+                                        class="accordion-collapse collapse text-white bg-dark text-white bg-dark"
+                                        data-bs-parent="#corejava">
+                                        <div class="accordion-body">
+                                            <ul style="list-style: circle">
+                                                <li>Introduction to HTML</li>
+                                                <li>HTML Document Structure</li>
+                                                <li>HTML Tags and Elements</li>
+                                                <li>HTML Forms and Input Elements</li>
+                                                <li>Semantic HTML5 Elements</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed h3" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                            aria-expanded="true" aria-controls="flush-collapseOne">
+                                            2. CSS (Cascading Style Sheets):
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseOne" class="accordion-collapse collapse text-white bg-dark"
+                                        data-bs-parent="#corejava">
+                                        <div class="accordion-body">
+                                            <ul title="Core Concepts" style="list-style: circle">
+                                                <li>Introduction to CSS</li>
+                                                <li>CSS Selectors and Properties</li>
+                                                <li>Box Model and Layout</li>
+                                                <li>Flexbox and Grid Layout</li>
+                                                <li>Responsive Web Design with Media Queries</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed h3" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                            aria-expanded="true" aria-controls="flush-collapseTwo">
+                                            3. JavaScript:
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseTwo" class="accordion-collapse collapse text-white bg-dark"
+                                        data-bs-parent="#corejava">
+                                        <div class="accordion-body">
+                                            <ul title="Constructors" style="list-style: circle">
+                                                <li>Introduction to JavaScript</li>
+                                                <li>Variables, Data Types, and Operators</li>
+                                                <li>Arrays and Objects and their methods</li>
+                                                <li>Control Flow (if statements, loops)</li>
+                                                <li>Functions and Scope</li>
+                                                <li>DOM Manipulation and Event Handling</li>
+                                                <li>Asynchronous JavaScript (Callbacks, Promises, Async/Await)</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
 
-                            <div class="d-grid gap-2 mt-4">
-                                <a class="btn btn-primary"
-                                    href="#tally-open=3jlX5x&tally-layout=modal&tally-emoji-text=👋&tally-emoji-animation=wave">Download
-                                    Full Course Curriculum <i class="fas fa-download"></i></a>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed h3" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapse3"
+                                            aria-expanded="true" aria-controls="flush-collapseTwo">
+                                            4.a. React Basics:
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapse3" class="accordion-collapse collapse text-white bg-dark"
+                                        data-bs-parent="#corejava">
+                                        <div class="accordion-body">
+                                            <ul title="Constructors" style="list-style: circle">
+                                                <li>Introduction to React</li>
+                                                <li>JSX (JavaScript XML) syntax</li>
+                                                <li>Components and Props</li>
+                                                <li>State and Lifecycle</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed h3" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapse4"
+                                            aria-expanded="true" aria-controls="flush-collapseTwo">
+                                            4.b. React Components:
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapse4" class="accordion-collapse collapse text-white bg-dark"
+                                        data-bs-parent="#corejava">
+                                        <div class="accordion-body">
+                                            <ul title="Constructors" style="list-style: circle">
+                                                <li>Functional Components</li>
+                                                <li>Class Components</li>
+                                                <li>Component Lifecycle Methods</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed h3" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapse5"
+                                            aria-expanded="true" aria-controls="flush-collapseTwo">
+                                            4.c. Handling Events:
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapse5" class="accordion-collapse collapse text-white bg-dark"
+                                        data-bs-parent="#corejava">
+                                        <div class="accordion-body">
+                                            <ul title="Constructors" style="list-style: circle">
+                                                <li>Event Handling in React</li>
+                                                <li>Form Handling in React</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed h3" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapse6"
+                                            aria-expanded="true" aria-controls="flush-collapseTwo">
+                                            4.d. React Router:
+
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapse6" class="accordion-collapse collapse text-white bg-dark"
+                                        data-bs-parent="#corejava">
+                                        <div class="accordion-body">
+                                            <ul title="Constructors" style="list-style: circle">
+                                                <li>Client-Side Routing in React</li>
+                                                <li>Navigation with React Router</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed h3" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapse7"
+                                            aria-expanded="true" aria-controls="flush-collapseTwo">
+                                            4.e. State Management:
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapse7" class="accordion-collapse collapse text-white bg-dark"
+                                        data-bs-parent="#corejava">
+                                        <div class="accordion-body">
+                                            <ul title="Constructors" style="list-style: circle">
+                                                <li>State lifting and prop drilling
+                                                </li>
+                                                <li>Context API for state management</li>
+                                                <li>State management with Redux (optional)</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed h3" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapse8"
+                                            aria-expanded="true" aria-controls="flush-collapseTwo">
+                                            4.f. State Management with Redux:
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapse8" class="accordion-collapse collapse text-white bg-dark"
+                                        data-bs-parent="#corejava">
+                                        <div class="accordion-body">
+                                            <ul title="Constructors" style="list-style: circle">
+                                                <li>Introduction to Redux</li>
+                                                <li>Actions, Reducers, and Store</li>
+                                                <li>Connecting React with Redux</li>
+                                                <li>Async Operations with Redux Thunk</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed h3" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapse9"
+                                            aria-expanded="true" aria-controls="flush-collapseTwo">
+                                            4.g. Hooks:
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapse9" class="accordion-collapse collapse text-white bg-dark"
+                                        data-bs-parent="#corejava">
+                                        <div class="accordion-body">
+                                            <ul title="Constructors" style="list-style: circle">
+                                                <li>useState, useEffect, useContext, etc.</li>
+                                                <li>Custom Hooks</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed h3" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapse10"
+                                            aria-expanded="true" aria-controls="flush-collapseTwo">
+                                            4.h. Building and Styling React Apps:
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapse10" class="accordion-collapse collapse text-white bg-dark"
+                                        data-bs-parent="#corejava">
+                                        <div class="accordion-body">
+                                            <ul title="Constructors" style="list-style: circle">
+                                                <li>Create React App (CRA)
+                                                </li>
+                                                <li>Styling in React (CSS-in-JS libraries, etc.)</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed h3" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapse11"
+                                            aria-expanded="true" aria-controls="flush-collapseTwo">
+                                            4.i. API Integration:
+
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapse11" class="accordion-collapse collapse text-white bg-dark"
+                                        data-bs-parent="#corejava">
+                                        <div class="accordion-body">
+                                            <ul title="Constructors" style="list-style: circle">
+                                                <li>Fetching data from APIs
+                                                </li>
+                                                <li>Axios or Fetch for HTTP requests</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed h3" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapse13"
+                                            aria-expanded="true" aria-controls="flush-collapseTwo">
+                                            4.j. Testing in React:
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapse13" class="accordion-collapse collapse text-white bg-dark"
+                                        data-bs-parent="#corejava">
+                                        <div class="accordion-body">
+                                            <ul title="Constructors" style="list-style: circle">
+                                                <li>Unit Testing with Jest and React Testing Library
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed h3" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapse14"
+                                            aria-expanded="true" aria-controls="flush-collapseTwo">
+                                            4.k. Deployment:
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapse14" class="accordion-collapse collapse text-white bg-dark"
+                                        data-bs-parent="#corejava">
+                                        <div class="accordion-body">
+                                            <ul title="Constructors" style="list-style: circle">
+                                                <li>Deploying React Apps (e.g., Netlify, Vercel, GitHub Pages)
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed h3" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseFour"
+                                            aria-expanded="true" aria-controls="flush-collapseFour">
+                                            5. Project Work:
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseFour" class="accordion-collapse collapse text-white bg-dark"
+                                        data-bs-parent="#corejava">
+                                        <div class="accordion-body">
+                                            <ul title="Packages and Imports" style="list-style: circle">
+                                                <li>Building a complete web application using HTML, CSS, JavaScript, and
+                                                    ReactJS</li>
+                                                <li>Applying learned concepts to solve real-world problems</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed h3" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseFive"
+                                            aria-expanded="true" aria-controls="flush-collapseFive">
+                                            6. Best Practices and Coding Standards:
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseFive" class="accordion-collapse collapse text-white bg-dark"
+                                        data-bs-parent="#corejava">
+                                        <div class="accordion-body">
+                                            <ul style="list-style: circle">
+                                                <li>Writing clean and maintainable code</li>
+                                                <li>Following industry best practices</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end -->
+                                <i>For more detailed topics download the full course
+                                    curriculum</i>
+                                <div class="d-grid gap-2 mt-4">
+                                    <a class="btn btn-primary"
+                                        href="#tally-open=nGRaXp&tally-layout=modal&tally-emoji-text=👋&tally-emoji-animation=wave">Download
+                                        Full Course Curriculum
+                                        <i class="fas fa-download"></i></a>
+                                </div>
                             </div>
-                        </span>
+                        </div>
                     </div>
 
+                    <h2 class="text-center mt-4 tth-card-title">Additional Learnings</h2>
+                    <div class="text-center mt-2">
+                        <span class="badge text-bg-info">Eclipse IDE</span>
+                        <span class="badge text-bg-info">Practice programs</span>
+                        <span class="badge text-bg-info">Interview Questions</span>
+                        <span class="badge text-bg-info">JDK 8 Features</span>
+                        <span class="badge text-bg-info">Git and Github</span>
+                        <span class="badge text-bg-info">Common Design Patterns</span>
+                        <span class="badge text-bg-info">Maven</span>
+                        <span class="badge text-bg-info">JUnit</span>
+                        <span class="badge text-bg-info">HTML</span>
+                        <span class="badge text-bg-info">CSS</span>
+                        <span class="badge text-bg-info">JavaScript</span>
+                        <span class="badge text-bg-info">Tomcat</span>
+                    </div>
                     <!-- Batch Timings Card -->
-                    <div class="card tth-card batch-timings-card mt-3">
+                    <div class="card tth-card batch-timings-card mt-4">
                         <h2 class="tth-card-title">Batch Timings</h2>
-                        <ul class="batch-timings">
-                            <li>Batch 1: Monday and Wednesday, 6:00 PM - 8:00 PM</li>
-                            <li>Batch 2: Tuesday and Thursday, 10:00 AM - 12:00 PM</li>
+                        <ul class="batch-timings text-start px-5">
+                            <li>Batch 1: Monday and Wednesday, 7:00 PM - 8:00 PM</li>
+                            <li>Batch 2: Thursday and Saturday, 8:30 AM - 9:30 AM</li>
                             <li>Batch 3: Saturday, 3:00 PM - 5:00 PM</li>
+                            <li class="fw-normal text-center">
+                                <small>
+                                    <i>* For batch details contact the below number</i>
+                                </small>
+                            </li>
                         </ul>
                     </div>
                 </section>
             </div>
         </div>
     </div>
+
+
+
 
     <!-- Footer -->
     <footer class="footer">
